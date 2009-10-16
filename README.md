@@ -48,6 +48,17 @@ Should look like this when installed:
         plugins/
             OrderedTags/
 
+## Requested Features
+
+* Deprecate the tag `OrderedTags` in exchange for `sort_order` and `sort_by` attributes on the `EntryTags` tag.
+
+    * `sort_by` - ascend (default), descend
+    * `sort_order` - label (default), order, etc
+    
+    Example:
+
+        <mt:EntryTags sort_order="ascend" sort_by="order" glue=', '><a href="<$mt:TagSearchLink$>"><$mt:TagName$></a></mt:EntryTags>
+
 
 ## Support
 
