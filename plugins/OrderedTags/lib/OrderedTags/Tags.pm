@@ -56,7 +56,7 @@ sub ordered_tags_featured_tag_name {
     if ($obj_tag) {
         $tag = MT::Tag->load($obj_tag->tag_id);
     } else {
-        $obj_tag = MT::ObjectTag->load({ object_id => $entry->id, object_datasource => 'entry' }, { limit => $index });
+        $obj_tag = MT::ObjectTag->load({ object_id => $entry->id, object_datasource => 'entry' }, { limit => 1, offset => $index });
         if ($obj_tag) {
             $tag = MT::Tag->load($obj_tag->tag_id);
         } else {

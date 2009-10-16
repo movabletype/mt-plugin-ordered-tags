@@ -27,7 +27,7 @@ Block tag returning tags in the order which they were saved.
 
 *Use the `<mt:EntryTags>` loop tag to output tags in alphabetical order.*
 
-> **Warning:** Entries/Pages saved prior to adding this plugin will have alphabetical order preserved.
+> **Warning:** Entries/Pages saved prior to adding this plugin will have the current alphabetical order preserved.
 
 ### OrderedTagsFeaturedTagName
 
@@ -36,8 +36,6 @@ Function tag to output specific tag. Default is first tag.
     1st tag: <$mt:OrderedTagsFeaturedTagName$>
     2nd tag: <$mt:OrderedTagsFeaturedTagName index="2"$>
     3rd tag: <$mt:OrderedTagsFeaturedTagName index="3"$>
-
-> **Warning:** Entries/Pages saved prior to adding this plugin will only be able to display the first tag, until the entry is saved again from the Edit Entry/Page screen
 
 
 ## Installation
@@ -49,11 +47,6 @@ Should look like this when installed:
     $MT_HOME/
         plugins/
             OrderedTags/
-
-
-## Desired Features
-
-* initial rebuild of blog after plugin installation adds order to tags from every entry.
 
 
 ## Support
