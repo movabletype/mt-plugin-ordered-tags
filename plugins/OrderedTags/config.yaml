@@ -1,0 +1,23 @@
+name: OrderedTags
+id: OrderedTags
+description: Adds an order to entry tags
+version: 0.1
+schema_version: 0.1
+
+object_types:
+	objecttag:
+		order: smallint
+
+callbacks:
+	MT::App::CMS::template_param.edit_entry: $OrderedTags::OrderedTags::Callbacks::param_edit_entry
+	cms_post_save.entry: $OrderedTags::OrderedTags::Callbacks::post_save_entry
+	api_post_save.entry: $OrderedTags::OrderedTags::Callbacks::post_save_entry
+
+tags:
+	block:
+		OrderedTags: $OrderedTags::OrderedTags::Tags::ordered_tags_tag
+	function:
+		OrderedTagsFeaturedTagName: $OrderedTags::OrderedTags::Tags::ordered_tags_featured_tag_name
+
+
+
