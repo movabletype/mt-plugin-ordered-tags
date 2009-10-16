@@ -1,23 +1,22 @@
-name: OrderedTags
 id: OrderedTags
-description: Adds an order to entry tags
-version: 0.1
-schema_version: 0.1
+name: Ordered Tags
+version: 1.0
+description: "Adds an order to entry tags"
+author_name: "Six Apart, Paolo Lim, Beau Smith"
+author_link: "http://www.sixapart.com/"
+plugin_link: "http://github.com/sixapart/mt-plugin-OrderedTags"
 
 object_types:
-	objecttag:
-		order: smallint
+    objecttag:
+        order: smallint
 
 callbacks:
-	MT::App::CMS::template_param.edit_entry: $OrderedTags::OrderedTags::Callbacks::param_edit_entry
-	cms_post_save.entry: $OrderedTags::OrderedTags::Callbacks::post_save_entry
-	api_post_save.entry: $OrderedTags::OrderedTags::Callbacks::post_save_entry
+    MT::App::CMS::template_param.edit_entry: $OrderedTags::OrderedTags::Callbacks::param_edit_entry
+    cms_post_save.entry: $OrderedTags::OrderedTags::Callbacks::post_save_entry
+    api_post_save.entry: $OrderedTags::OrderedTags::Callbacks::post_save_entry
 
 tags:
-	block:
-		OrderedTags: $OrderedTags::OrderedTags::Tags::ordered_tags_tag
-	function:
-		OrderedTagsFeaturedTagName: $OrderedTags::OrderedTags::Tags::ordered_tags_featured_tag_name
-
-
-
+    block:
+        OrderedTags: $OrderedTags::OrderedTags::Tags::ordered_tags_tag
+    function:
+        OrderedTagsFeaturedTagName: $OrderedTags::OrderedTags::Tags::ordered_tags_featured_tag_name

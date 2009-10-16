@@ -52,3 +52,8 @@ Should look like this when installed:
 ## Support
 
 This plugin is not an official Six Apart release, and as such support from Six Apart for this plugin is not available.
+
+
+## Change Log
+
+* 2009-10-16 - v1.0 - Initial Commit
