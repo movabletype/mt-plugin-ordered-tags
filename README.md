@@ -27,9 +27,7 @@ Block tag returning tags in the order which they were saved.
 
 *Use the `<mt:EntryTags>` loop tag to output tags in alphabetical order.*
 
-**Warning:**
-
-Entries/Pages saved prior to adding this plugin will have the current alphabetical order preserved.
+**Warning:** Entries/Pages saved prior to adding this plugin will have the current alphabetical order preserved.
 
 ### OrderedTagsFeaturedTagName
 
