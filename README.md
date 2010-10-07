@@ -1,8 +1,8 @@
 # OrderedTags
 
-Author: Six Apart, Paolo Lim  
-Copyright 2009 Six Apart, Ltd.  
-License: Artistic, licensed under the same terms as Perl itself
+* Author: Six Apart
+* Copyright 2009 Six Apart Ltd.
+* License: Artistic, licensed under the same terms as Perl itself
 
 
 ## Overview
@@ -27,7 +27,9 @@ Block tag returning tags in the order which they were saved.
 
 *Use the `<mt:EntryTags>` loop tag to output tags in alphabetical order.*
 
-> **Warning:** Entries/Pages saved prior to adding this plugin will have the current alphabetical order preserved.
+**Warning:**
+
+Entries/Pages saved prior to adding this plugin will have the current alphabetical order preserved.
 
 ### OrderedTagsFeaturedTagName
 
@@ -54,7 +56,7 @@ Should look like this when installed:
 
     * `sort_by` - ascend (default), descend
     * `sort_order` - label (default), order, etc
-    
+
     Example:
 
         <mt:EntryTags sort_order="ascend" sort_by="order" glue=', '><a href="<$mt:TagSearchLink$>"><$mt:TagName$></a></mt:EntryTags>

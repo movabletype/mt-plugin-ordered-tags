@@ -3,8 +3,8 @@ name: Ordered Tags
 version: 1.0
 description: "Adds an order to entry tags"
 author_name: "Six Apart, Paolo Lim, Beau Smith"
-author_link: "http://www.sixapart.com/"
-plugin_link: "http://github.com/sixapart/mt-plugin-OrderedTags"
+author_link: "http://www.movabletype.org/"
+plugin_link: "http://github.com/movabletype/mt-plugin-ordered-tags"
 
 object_types:
     objecttag:
